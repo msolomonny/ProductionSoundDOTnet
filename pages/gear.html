@@ -7,29 +7,21 @@
     <link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&family=Montserrat&family=Open+Sans:wght@600&display=swap" rel="stylesheet">
       </head>
     <body>
-
-      <header class="header">
-        <input class="menu-btn" type="checkbox" id="menu-btn" />
-        <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
-        <ul class="menu">
-          <li><a href="resume.html">RESUME</a></li>  
-          <li><a href="gear.html">GEAR</a></li>
-          <li><a href="media.html">MEDIA</a></li>
-          <li><a href="about.html">ABOUT / CONTACT</a></li>
-        </ul>
+      <header>
+        <a href="../index.html" class="headerlogo"><img src="../images/PSDN_Logo.svg" height="80"></a>
+        <nav class="active">
+          <ul class="navul">
+            <li><a class="navli" href="resume.html">RESUME</a></li>  
+            <li><a class="navli" href="gear.html">GEAR</a></li>
+            <li><a class="navli" href="media.html">MEDIA</a></li>
+            <li><a class="navli" href="about.html">ABOUT</a></li>
+          </ul>
+        </nav>
+          <div>
+            <img class="menumobileicon" src="../images/mobilenav.svg"> 
+          </div>
       </header>
 
-      <!-- <header>
-        <a class="headerimg" href="../index.html"><img src="../images/PSDN_Logo_sm.png"></a>
-        <nav class="headernav">
-            <ul class="navul">
-                <li><a href="resume.html">RESUME</a></li>
-                <li><a href="gear.html">GEAR</a></li>
-                <li><a href="media.html">MEDIA</a></li>
-                <li><a href="about.html">ABOUT / CONTACT</a></li>
-            </ul>
-        </nav>
-    </header> -->
       <h3>AVAILABLE GEAR</h3>
       <p class="gearblurb">Reliable, state-of-the-art gear. Consistent, top-quality results. <br>
       Everytime.</p>
@@ -52,5 +44,15 @@
         <a href="https://www.imdb.com/name/nm3046076/">IMDb</a>
         </ul>
     </footer>
+
+    <!--JS for mobile menu animation-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.menumobileicon').click(function(){
+          $('nav').toggleClass('active')
+        })
+      })
+    </script>
     </body>
 </html>
