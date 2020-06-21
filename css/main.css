@@ -48,9 +48,10 @@ p {
   max-width: 60%;
   height: auto;
   position: absolute;
-  left: calc(15vh + 7%);
-  top: 10%;
-  left: 25%;
+  left: calc(15vw + 9%);
+  top: 30px;
+  left: 18%;
+  float: left;
   z-index: -1;
 }
 a img {
@@ -310,5 +311,14 @@ footer a {
   }
   h3 {
     padding-top: 1px;
+  }
+  .mainlogoname {
+    max-width: 60%;
+    height: auto;
+    position: absolute;
+    left: calc(15vh + 7%);
+    top: 10%;
+    left: 25%;
+    z-index: -1;
   }
 }
