@@ -34,7 +34,7 @@ p {
     -webkit-animation-delay: 2s;
     animation: slide 0.5s forwards;
     animation-delay: .5s;
-    top: -7vh;
+    padding-left: 20px;
 
 }
 @-webkit-keyframes slide {
@@ -304,11 +304,9 @@ footer a {
   }
   iframe {
     width: 90%;
-    padding-top: 10px;
-    padding-bottom: 10px;
   }
   .dogs {
-    padding-bottom: 5px;
+    margin-bottom: 40px;
   }
   h3 {
     padding-top: 1px;
