@@ -94,6 +94,7 @@ section {
     flex-wrap: wrap;
     justify-content: center;
     align-content: center;
+    padding-bottom: 50px;
 }
 .jobcard {
     display: flex;
@@ -101,24 +102,26 @@ section {
     background:  #abcbd4;
     margin: 3px;
     width: 150px;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .showlogowrapper {
-    height: 50%;
+    height: auto;
+    align-self: flex-start;
     justify-content: center;
     align-items: center;
 }
 .shownamewrapper{
-    height: 50%;
+    height: auto;
     align-items: center;
 }
 .clientlogo {
-    max-height: 70%;
+    width: 90%;
     height: auto;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    object-fit: scale-down;
 
 }
 .clientshow {
