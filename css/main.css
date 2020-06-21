@@ -174,7 +174,9 @@ section {
 .dogs {
   display: block;
   padding: 10px 0px;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 55px;
 }
 .names {
   text-align: start;
