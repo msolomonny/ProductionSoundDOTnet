@@ -10,20 +10,43 @@
       </head>
     <body>
         <header>
-            <a href="../index.html" class="headerlogo"><img src="../images/PSDN_Logo.svg" height="80"></a>
-            <ul class="navul">
-              <li><a class="navli" href="pages/resume.html">RESUME</a></li>  
-              <li><a class="navli" href="pages/gear.html">GEAR</a></li>
-              <li><a class="navli" href="pages/media.html">MEDIA</a></li>
-              <li><a class="navli" href="pages/about.html">ABOUT</a></li>
-            </ul>
+            <!-- <a href="../index.html" class="headerlogo"><img src="../images/PSDN_Logo.svg" height="80"></a> -->
+            <nav class="active">
+              <ul class="navul">
+                <li><a class="navli" href="pages/resume.html">RESUME</a></li>  
+                <li><a class="navli" href="pages/gear.html">GEAR</a></li>
+                <li><a class="navli" href="pages/media.html">MEDIA</a></li>
+                <li><a class="navli" href="pages/about.html">ABOUT</a></li>
+              </ul>
+            </nav>
+              <div class="menumobileicon">
+                <div class="container" onclick="myFunction(this)">
+                  <div class="bar1"></div>
+                  <div class="bar2"></div>
+                  <div class="bar3"></div>
+                </div>
+              </div>
           </header>
-    <a href="index.html"><img src="images/PSDN_Logo.png"></a>
+    <img class="mainlogo" src="images/PSDN_Logo.png">
     <footer>
         <a href="mailto:msolomonny@gmail.com">MSolomonNY@gmail.com</a>  |  
         <a href="tel:5163761215">516 376 1215</a>  |  
         <a href="https://www.imdb.com/name/nm3046076/">IMDb</a>
         </ul>
     </footer>
+    <!--JS for mobile menu animation-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.menumobileicon').click(function(){
+          $('nav').toggleClass('active')
+        })
+      })
+    </script>
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+      </script>
     </body>
 </html>

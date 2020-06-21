@@ -9,12 +9,21 @@
     <body>
       <header>
         <a href="../index.html" class="headerlogo"><img src="../images/PSDN_Logo.svg" height="80"></a>
-        <ul class="navul">
-          <li><a class="navli" href="resume.html">RESUME</a></li>  
-          <li><a class="navli" href="gear.html">GEAR</a></li>
-          <li><a class="navli" href="media.html">MEDIA</a></li>
-          <li><a class="navli" href="about.html">ABOUT</a></li>
-        </ul>
+        <nav class="active">
+          <ul class="navul">
+            <li><a class="navli" href="resume.html">RESUME</a></li>  
+            <li><a class="navli" href="gear.html">GEAR</a></li>
+            <li><a class="navli" href="media.html">MEDIA</a></li>
+            <li><a class="navli" href="about.html">ABOUT</a></li>
+          </ul>
+        </nav>
+          <div class="menumobileicon">
+            <div class="container" onclick="myFunction(this)">
+              <div class="bar1"></div>
+              <div class="bar2"></div>
+              <div class="bar3"></div>
+            </div>
+          </div>
       </header>
 
       <article>
@@ -74,5 +83,19 @@
         <a href="https://www.imdb.com/name/nm3046076/">IMDb</a></p>
         </ul>
     </footer>
+    <!--JS for mobile menu animation-->
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.menumobileicon').click(function(){
+          $('nav').toggleClass('active')
+        })
+      })
+    </script>
+    <script>
+      function myFunction(x) {
+        x.classList.toggle("change");
+      }
+      </script>
     </body>
 </html>
