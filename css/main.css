@@ -18,6 +18,7 @@ p {
     font-family: 'Montserrat', sans-serif;
 
 }
+
 .mainwrapper {
     position: relative;
     overflow: hidden;
@@ -65,7 +66,7 @@ header {
     top: 0;
     background: #92b7c2;
     padding-top: 5px;
-    /* padding-bottom: 5px; */
+    box-sizing: border-box;
     
 }
 
