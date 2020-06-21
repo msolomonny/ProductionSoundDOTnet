@@ -60,14 +60,13 @@ a img {
 
 /****** NAV LINK STYLE *******/
 header {
+    box-sizing: border-box;
     position: sticky;
     width: 100%;
     height: 85px;
     top: 0;
     background: #92b7c2;
     padding-top: 5px;
-    box-sizing: border-box;
-    
 }
 
 .headerlogo {
@@ -239,6 +238,7 @@ footer a {
 }
 @media (max-width: 767px) {
   header {
+    box-sizing: border-box;
     padding-top: 10px;
   }
   .menumobileicon {
