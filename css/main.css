@@ -179,10 +179,21 @@ section {
   background: none;
   text-align: center;
 }
-
+.dog__headshots {
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  max-width: 60%;
+  justify-content: space-evenly;
+}
+.bean,
+.simbi {
+  width: 250px;
+  height: auto;
+}
 .dogs {
   display: block;
-  padding: 10px 0px;
+  padding: 10px;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 55px;
