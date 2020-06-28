@@ -68,10 +68,10 @@ header {
     background: #92b7c2;
     padding-top: 5px;
 }
-
 .headerlogo {
   float: left;
   padding-left: 10px;
+  padding-bottom: 5px;
 }
 header nav {
     float: right;
@@ -158,20 +158,28 @@ section {
 .bio {
     padding-left: 80px;
     padding-right: 80px;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 10%;
+    margin-right: 10%;
+    /* border: greenyellow solid 1px; */
 
 }
-.aboutquotes, .gearlist {
+.aboutquotes, .gearlist, .bio__dogs {
   margin-left: auto;
   margin-right: auto;
-  width: 60%;
+  width: 40%;
   background: #abcbd4;
   padding: 20px;
   font-family: 'Montserrat', sans-serif;
   list-style-type: none;
   text-align: center;
 }
+.bio__dogs {
+  margin-left: auto;
+  margin-right: auto;
+  background: none;
+  text-align: center;
+}
+
 .dogs {
   display: block;
   padding: 10px 0px;
@@ -182,6 +190,21 @@ section {
 .names {
   text-align: start;
 }
+.aboutwrapper {
+  margin-left: 15%;
+  margin-right: 8%;
+}
+.aboutquotes {
+  clear: both;
+}
+.headshot {
+  float: left;
+  height: 200px;
+  margin: 0 auto;
+  padding-right: 20px;
+  padding-bottom: 30px;
+}
+
 /****** MEDIA PAGE STYLE *******/
 iframe {
   display: block;
@@ -279,7 +302,9 @@ footer a {
 
   }
   header nav ul li a {
-    border-bottom: solid rgba(0,0,0,.2);
+    padding: 2px;
+    margin: 6px;
+    border-bottom: 2px solid rgba(0,0,0,.2);
 
   }
  .gearlist, .gearblurb, .bio, .dogs {
@@ -326,5 +351,18 @@ footer a {
     top: 10%;
     left: 25%;
     z-index: -1;
+  }
+  .aboutquotes {
+    clear: both;
+  }
+  .headshot {
+    float: left;
+    width: 35%;
+    max-width: 60%;
+    padding-left: 30px;
+    height: auto;
+  }
+  .aboutwrapper {
+    margin: 0 auto;
   }
 }
